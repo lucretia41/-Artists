@@ -44,6 +44,16 @@ function addGlow(event, artistImage) {
     }, 1000);
 }
 
+function addGlowToMainArtists(event, artistImage) {
+    const colors = ['red', 'blue', 'yellow', 'green'];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+    artistImage.style.borderColor = randomColor;
+    artistImage.style.borderWidth = '5px';
+    artistImage.style.borderStyle = 'solid';
+    artistImage.style.transiton = 'border-color 0.5s, border-width 0.5s';
+
+}
 
 function showCaseArtist(){
     artistName.textContent = artist.artistName
