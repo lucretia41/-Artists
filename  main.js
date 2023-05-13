@@ -12,8 +12,8 @@ const artistdate = document.querySelector("date")
 const artistImage = document.querySelector(".detail-image")
 const artistTitle = document.querySelector("title")
 
-function artistsDisplay(artwork){
-    artData.forEach(artData => {
+function artistsDisplay(artData){
+    artData.forEach(artwork => {
         const eachArtist = document.createElement("img")
         eachArtist.src = artistImage
         artistDisplay.appendChild(eachArtist)
@@ -35,20 +35,23 @@ function addGlow(event, artistImage) {
     artistImage.style.borderStyle = 'solid';
     artistImage.style.transiton = 'border-color 0.5s, border-width 0.5s';
 
-    setTimeout() =>{
+    setTimeout(() =>{
         artistImage.style.borderColor = '';
         artistImage.style.borderWidth = '';
         artistImage.style.borderStyle = '';
         artistImage.style.transiton = '';
 
-    }
+    }, 1000);
 }
+
 
 function showCaseArtist(){
     artistName.textContent = artist.artistName
     artistdate.textContent = artist.date    
     artistImage.src = artistImage
-    
+ artistImage.addEventListener('mouseover', event => {
+
+ })   
 }
 
 
