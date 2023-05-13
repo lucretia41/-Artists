@@ -65,6 +65,9 @@ function showCaseArtist(){
  })   
 }
 
+console.log()
+
+
 
 
 
