@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+background-position: center;
+
+}
+
+header {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+
+}
+
