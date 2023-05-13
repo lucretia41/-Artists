@@ -60,6 +60,7 @@ function showCaseArtist(){
     artistdate.textContent = artist.date    
     artistImage.src = artistImage
  artistImage.addEventListener('mouseover', event => {
+    addGlowToMainArtists (event, artistImage);
 
  })   
 }
