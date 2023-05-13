@@ -44,6 +44,13 @@ function addGlow(event, artistImage) {
     }
 }
 
+function showCaseArtist(){
+    artistName.textContent = artist.artistName
+    artistdate.textContent = artist.date    
+    artistImage.src = artistImage
+    
+}
+
 
 
 
