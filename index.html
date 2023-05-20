@@ -4,19 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artists of the Met</title>
-    <script src="main.js" defer></script>
+    <title>Art at Met</title>
+  <script src="main.js"defer></script>
     <link rel="stylesheet" href="style.css">
 
 
 </head>
 <body>
-    <header>
-        <h3>Artists of the Met</h3>
-    </header>
+  <!-- <button id="enter">Enter</button> -->
+  <header>
+    <h3>Artists at the Met</h3>
+  </header>
+    <form> 
+      <input "text" placeholder="Search">
+      <input type="submit">
+    </form>
+<!-- <img src="" alt="Museum Banner"> -->
+<div id ="artist-menu">
 
-  <div Artists></div>
+</div>
   
+<div id="artist-detail">
+  <img id="detail-image" src="https://images.metmuseum.org/CRDImages/ep/original/DP145931.jpg" alt="Insert Name Here" />
+  <h2 id="detail-name"">Insert Name Here</h2>
+
+</div>
+
+<h3>Date:</h3>
+<p>
+  <span id='detail-date'>Insert date here</span>
+</p>
+<h3>Title:</h3>
+<p id='detail-title'>
+  Insert title here
+</p>
+
+
+<form id="new-artist">
+  <h4>Add New Artist</h4>
+  <label for="name">Name: </label>
+  <input type="text" name="name" id="new-name" />
+  <label for="image">Image: </label>
+  <input type="text" name="image" id="new-image" />
+  <label for="date">Date: </label>
+  <input type="number" name="date" id="new-date" />
+  <label for="new-title">Title: </label>
+  <textarea name="new-title" id="new-title"></textarea>
+  <input type="submit" value="Create" />
+</form>
 
 </body>
 </html>
